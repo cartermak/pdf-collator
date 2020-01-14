@@ -1,4 +1,3 @@
-import os
 from PyPDF2 import PdfFileReader, PdfFileWriter
 from sys import argv
 
@@ -9,8 +8,6 @@ def main():
     collatePDF(argv[1],argv[2],argv[3])
 
 def collatePDF(pathA,pathB,outName):
-    fnA = os.path.splitext(os.path.basename(pathA))[0]
-    fnB = os.path.splitext(os.path.basename(pathB))[0]
 
     docA = PdfFileReader(pathA)
     docB = PdfFileReader(pathB)
@@ -30,6 +27,6 @@ def collatePDF(pathA,pathB,outName):
     out = open(outName,'wb')
     pdfWrite.write(out)    
 
-
+# Who knows, maybe someone will call this as a module...
 if __name__ == '__main__':
     main()
