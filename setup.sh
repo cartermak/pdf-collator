@@ -22,4 +22,15 @@ else
     echo "Pip found."
 fi
 
+# Check if venv is installed
+PIP_INSTALLED=$(dpkg-query -W --showformat='${Status}\n' python3-venv|grep "install ok installed")
+
+# If not installed, install latest version
+if [ "" == "$PIP_INSTALLED" ]; then
+    echo "venv not found; installing venv..."
+    sudo apt-get --force-yes --yes install python-pip
+else
+    echo "venv found."
+fi
+
 echo "Setup complete."
