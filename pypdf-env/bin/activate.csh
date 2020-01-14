@@ -8,7 +8,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/media/carter/Dual_Boot_Share/Documents/Geekery/Projects/PDF Collater/github/pdf-collator/temp"
+setenv VIRTUAL_ENV "/media/carter/Dual_Boot_Share/Documents/Geekery/Projects/PDF Collater/github/pdf-collator/pypdf-env"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"
@@ -17,8 +17,8 @@ setenv PATH "$VIRTUAL_ENV/bin:$PATH"
 set _OLD_VIRTUAL_PROMPT="$prompt"
 
 if (! "$?VIRTUAL_ENV_DISABLE_PROMPT") then
-    if ("temp" != "") then
-        set env_name = "temp"
+    if ("pypdf-env" != "") then
+        set env_name = "pypdf-env"
     else
         if (`basename "VIRTUAL_ENV"` == "__") then
             # special case for Aspen magic directories

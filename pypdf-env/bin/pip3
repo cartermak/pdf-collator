@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/media/carter/Dual_Boot_Share/Documents/Geekery/Projects/PDF Collater/github/pdf-collator/temp/bin/python3" "$0" "$@"
+'''exec' "/media/carter/Dual_Boot_Share/Documents/Geekery/Projects/PDF Collater/github/pdf-collator/pypdf-env/bin/python3" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re

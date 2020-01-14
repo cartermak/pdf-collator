@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/media/carter/Dual_Boot_Share/Documents/Geekery/Projects/PDF Collater/github/pdf-collator/temp"
+set -gx VIRTUAL_ENV "/media/carter/Dual_Boot_Share/Documents/Geekery/Projects/PDF Collater/github/pdf-collator/pypdf-env"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
@@ -52,8 +52,8 @@ if test -z "$VIRTUAL_ENV_DISABLE_PROMPT"
         set -l old_status $status
 
         # Prompt override?
-        if test -n "(temp) "
-            printf "%s%s" "(temp) " (set_color normal)
+        if test -n "(pypdf-env) "
+            printf "%s%s" "(pypdf-env) " (set_color normal)
         else
             # ...Otherwise, prepend env
             set -l _checkbase (basename "$VIRTUAL_ENV")

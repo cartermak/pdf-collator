@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/media/carter/Dual_Boot_Share/Documents/Geekery/Projects/PDF Collater/github/pdf-collator/temp"
+VIRTUAL_ENV="/media/carter/Dual_Boot_Share/Documents/Geekery/Projects/PDF Collater/github/pdf-collator/pypdf-env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
@@ -54,8 +54,8 @@ fi
 
 if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     _OLD_VIRTUAL_PS1="${PS1:-}"
-    if [ "x(temp) " != x ] ; then
-	PS1="(temp) ${PS1:-}"
+    if [ "x(pypdf-env) " != x ] ; then
+	PS1="(pypdf-env) ${PS1:-}"
     else
     if [ "`basename \"$VIRTUAL_ENV\"`" = "__" ] ; then
         # special case for Aspen magic directories
