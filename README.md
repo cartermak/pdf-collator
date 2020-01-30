@@ -17,8 +17,6 @@ Usage for the actual program is as follows:
 python3 collate_PDFs.py <first-file>.pdf <second-file>.pdf <output-file>.pdf
 ```
 
-*(Remove the angle brackets.)*
-
 To exit the virtual environment:
 
 ```bash
